@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Slackey&display=swap');
+
+* {
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------- CONTAINER UTILITY */
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+/* ------------------------------------- HEADER CONFIGS */
+/* ------------------------------------- NAVBAR CONFIGS */
+
+header {
+    background: black;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-decoration: none;
+    text-align: center;
+    background: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+    background: black;
+    color: white;
+}
+
+.navbar a:hover {
+    color: yellowgreen;
+}
+
+/* ------------------------------------- SECTION CONFIGS */
+/* ------------------------------------- CARDS CONFIGS */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    border-radius: 5px;
+    width: 50%;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.logo h2 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+.logo h5 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    width: 25%;
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 10px;
+    border: thin solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+
+/* ------------------------------------- SECTION CONFIGS */
+/* ------------------------------------- TABLE CONFIGS */
+  
+table {
+    border-radius: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente oscuro */
+}
+  
+td {
+    font-size: small;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+  
+th {
+    font-size: medium;
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: yellowgreen;
+}
+  
+tr:hover {
+    background-color: black;
+    color: yellowgreen;
+}
+
+.bebestibles {
+    background-color: greenyellow;
+}
+
+/* ------------------------------------- MEDIA QUERYS CONFIGS */
+/* ------------------------------------- MEDIA QUERYS CONFIGS */
+
+/* xxs */
+@media (min-width: 360px) {
+    .container {
+        max-width: 360px;
+    }
+
+    .card {
+        width: 75%;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 10px;
+        border: thin solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px;
+    }
+
+}
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 10px;
+        border: thin solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px;
+    }
+}
+/* sm */
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+
+    .card {
+        width: 45%;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 10px;
+        border: thin solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px;
+    }
+}
+/* md */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .card {
+        width: 45%;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 10px;
+        border: thin solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px;
+    }
+}
+/* lg */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .card {
+        width: 20%;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 10px;
+        border: thin solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px;
+    }
+}
+/* xl */
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .card {
+        width: 20%;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 10px;
+        border: thin solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px;
+    }
+}
+/* 2xl */
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+
+    .card {
+        width: 20%;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 10px;
+        border: thin solid black;
+        border-radius: 10px;
+        box-shadow: 10px 10px;
+    }
+}
